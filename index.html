@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+Dreamful Events Home Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<img class="style-logo" src="../../../Dreamful Events NEW/Dreamful Event/end/images/logo.jpg" alt="DreamfulEvent Logo">
+		<nav class="style-nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="Packages.html">PACKAGES</a></li>
+				<li><a href="catering.html">Catering</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+     <div class="slides">
+        <div class="mySlides fade">
+          <img
+            src="images/herowedding.jpg"
+            alt="Dreamful"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="images/quincedecor.jpeg"
+            alt="Dreamful"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img src="images/babyshower.jpg" alt="Dreamful" style="width: 100%" />
+        </div>
+		  
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      
+      </div>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 5000);
+        
+        };
+      </script>
+      <br />
+      <h2>Welcome</h2>
+      <p>
+        Dreamful Event has been awarded the #1 event venue in Florida. We are
+        known to have an elegant 5000 sq ft space that caters to every guest
+        dreams. We take pride in making a one of a kind event to a long lasting
+        memory that will be forever cherished. On a Budget? No worries, here at
+        Dreamful Event, we work with our clients to make sure their event is a
+        BIG SUCCESS!<br />No matter the occasions such as birthdays, weddings,
+        quinceanera/sweet 16, reunions, corporate meetings, high school dance,
+        holiday events,etc; We plan it all! Our professional coordinator will
+        assist you in every step , and plan every detail to make the days
+        leading to the event go smoothly and less stressful.
+      </p>
+      <div class="flex-container">
+        <div class="container">
+          <img src="images/wedding.jpg" alt="Wedding" class="image" />
+          <div class="middle">
+             <h7><a href="Packages.html">Wedding</a></h7>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/cake.jpg" alt="Quince" class="image" />
+          <div class="middle">
+             <h7><a href="Packages.html">Quinceanera/Sweet 16</a></h7>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/babyshower.jpg" alt="BabyShower" class="image" />
+          <div class="middle">
+             <h7><a href="Packages.html">Baby Shower</a></h7>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="container">
+          <img src="images/genderreveal.png" alt="GenderReveal" class="image" />
+          <div class="middle">
+             <h7><a href="Packages.html">Gender Reveal</a></h7>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/dance.png" alt="Dances" class="image" />
+          <div class="middle">
+             <h7><a href="Packages.html">Dances</a></h7>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/corporate.jpg" alt="Corporate" class="image" />
+          <div class="middle">
+            <h7><a href="Packages.html">Corporate</a></h7>
+          </div>
+        </div>
+      </div>
+	 <h1>About Us</h1>
+	<p>Here are Dreamful Events , we offer a variety of different packages that are designed to meet your needs.We have been established since 2017, and  have received awards for having an outstanding service and performance , not to mention a top chef for our catering menu. We work with our clients to ensure  their day will be unforgettable and will always be cherished<br><br> We make sure our clients are 100% satisfied with the outcome of their event. We know event planning can be stressful that’s why we take care of everything, from minor details to last minute decisions. Begin your event planning here!</p>
+	 <br>
+<h1>Location</h1>
+	 <div class="row">
+  <div class="column">
+   <img src="images/map.png" alt="Map" class="map">
+  </div>
+  <div class="column1">
+    <h6>Address: <br>123 PGA BLVD.<br>Palm Beach Gardens,FL 33410</h6>  
+  </div>
+</div>
+    </main>
+	
+	</body>
+	
+	
+	<footer>©2024 I do not own any rights to any of the images on the site, this was only used for a project purpose. Please do not make any changes or edits to the site.</footer>
+
+	
+</html>
